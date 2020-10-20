@@ -1,0 +1,40 @@
+Todo el trabajo de limpieza de datos que se hizo previamente,
+se ve reflejado en este dashboard. 
+
+El dashboard está seccionado en pestañas que muestran las
+estadísticas de interes público en Inicio y en Mapas. 
+
+Aunque también hay una sección privada, donde se muestran
+las estadísticas de interés para los tomadores de decisiones 
+donde se incluyen además los modelos predictivos y mapas con 
+información sensible.
+
+
+Esta gráfica nos ayuda a er la proporción de asintomáticos y 
+nos revela que tiene una gran importancia dentro del análisis
+de Covid, pues no hemos visto ninguna información al respecto
+
+Con base en la información que proporciona Radar Jalisco sobre 
+los casos de COVID-19 se entrenaron modelos de Machine Learning 
+ con el objetivo de tener un pronóstico certero en un intervalo
+ corto de tiempo para generar acciones que ayuden al control del
+ aumento de casos positivos.
+Se obtuvieron tres modelos predictivos de Machine Learning. 
+Uno de ellos fue el Modelo ARIMA.
+
+El segundo modelo que se entrenó fue un XGBoost (Extreme Gradient 
+Boosting). El modelo XGBoost es un modelo supervisado que crea 
+árboles de decisión de manera secuencial en base a sus varianzas
+y va generando modelos cada vez más “fuerte”, es decir, con mejor
+ poder predictivo y estabilidad en sus resultados. Al contrario 
+del modelo ARIMA, este modelo permite hacer una predicción 
+analizando múltiples variables. Para obtener las variables que 
+mejor describieran el aumento de casos positivos de COVID, se 
+utilizó un método de bagging con el modelo Random Forest.
+
+Finalmente, se implementó un modelo llamado Prophet que 
+pronostica datos de series de tiempo con tendencia, 
+estacionalidad y además días feriados. Con este modelo, a 
+diferencia de los dos anteriores, se hace un pronóstico del 
+porcentaje de los casos positivos respecto al total de muestras 
+tomadas por día.
